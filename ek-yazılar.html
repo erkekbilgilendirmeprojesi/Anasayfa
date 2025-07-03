@@ -21,7 +21,6 @@
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
         rel="stylesheet">
     <style>
-        /* Copy the same CSS styles from your main index.html to maintain consistency */
         body {
             font-family: 'Open Sans', sans-serif;
             line-height: 1.8;
@@ -34,11 +33,13 @@
             flex-direction: column;
             min-height: 100vh;
             padding-top: 70px;
+            /* Space for fixed navbar */
             overflow-x: hidden;
             width: 100%;
             box-sizing: border-box;
         }
 
+        /* New navbar styles */
         .navbar {
             position: fixed;
             top: 0;
@@ -53,6 +54,11 @@
             height: 60px;
             z-index: 1000;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-hidden {
+            transform: translateY(-100%);
         }
 
         .navbar-brand {
@@ -100,6 +106,7 @@
             text-align: center;
         }
 
+        /* Mobile menu button */
         .menu-toggle {
             display: none;
             background: none;
@@ -116,6 +123,7 @@
             margin: 0 auto;
             width: 100%;
             box-sizing: border-box;
+            overflow-x: hidden;
         }
 
         h1,
@@ -134,12 +142,110 @@
             margin-bottom: 30px;
         }
 
+        h2 {
+            color: #c0392b;
+            font-size: 1.8rem;
+            margin-top: 40px;
+            border-left: 5px solid #e74c3c;
+            padding-left: 15px;
+        }
+
+        h3 {
+            color: #16a085;
+            font-size: 1.4rem;
+        }
+
+        p {
+            margin-bottom: 1.5em;
+            font-size: 1.1rem;
+        }
+
+        ul,
+        ol {
+            padding-left: 10px;
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+            font-size: 1.2rem;
+        }
+
+        ul li:before {
+            content: "\f054";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: #e74c3c;
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+
+        ul ul li:before {
+            content: "\f0a4";
+            color: #3498db;
+        }
+
+        .divider {
+            border-top: 2px dashed #cbd5e0;
+            margin: 40px 0;
+        }
+
+        .highlight {
+            background-color: #fff8f8;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 5px solid #e74c3c;
+            margin: 30px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        a:hover {
+            color: #e74c3c;
+            text-decoration: underline;
+        }
+
+        .contact-box {
+            background-color: #f0f7ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        strong {
+            color: #2c3e50;
+        }
+
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
         footer {
             background-color: #9b3328;
             color: white;
             padding: 20px;
             text-align: center;
             margin-top: auto;
+            width: 100%;
+            box-sizing: border-box;
+            margin-left: 0;
+            margin-right: 0;
+            left: 0;
+            right: 0;
+            position: relative;
         }
 
         .footer-text {
@@ -162,7 +268,153 @@
             transform: translateY(-3px);
         }
 
-        @media (max-width: 1024px) {
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #f8fafc;
+            border-radius: 8px;
+            transition: all 0.3s;
+            border-left: 4px solid #2980b9;
+        }
+
+        .social-link i {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            color: #e74c3c;
+        }
+
+        .social-link:hover {
+            background-color: #edf2f7;
+            border-left: 4px solid #e74c3c;
+            text-decoration: none;
+            transform: translateX(5px);
+        }
+
+        .action-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+
+        .btn {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn i {
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+
+        .btn:hover {
+            background-color: #e74c3c;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .share-section {
+            background-color: #f0f7ff;
+            padding: 5px;
+            border-radius: 8px;
+            margin: 30px 0;
+            text-align: center;
+            border-left: 5px solid #2980b9;
+        }
+
+        /* New share buttons styles */
+        .share-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+            justify-content: center;
+        }
+
+        .share-btn {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .share-btn i {
+            margin-right: 8px;
+            font-size: 1rem;
+        }
+
+        .share-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .share-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .share-btn.twitter {
+            background-color: #1DA1F2;
+        }
+
+        .share-btn.instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        .share-btn.whatsapp {
+            background-color: #25D366;
+        }
+
+        .share-btn.telegram {
+            background-color: #0088cc;
+        }
+
+        .share-btn.copy-url {
+            background-color: #6c757d;
+        }
+
+        .share-btn.copy-content {
+            background-color: #2980b9;
+        }
+
+        /* Improved responsive navigation styles */
+        @media (max-width: 1480px) {
+
+            /* Earlier breakpoint to prevent text distortion */
             .navbar-brand {
                 max-width: 60%;
                 white-space: nowrap;
@@ -191,6 +443,128 @@
                 max-height: 700px;
                 display: flex;
             }
+        }
+
+        /* Ensure navigation menu looks good even at tablet sizes */
+        @media (max-width: 900px) and (min-width: 769px) {
+            .nav-menu a {
+                padding: 0 10px;
+                font-size: 0.8rem;
+            }
+
+            .nav-menu i {
+                margin-right: 5px;
+            }
+        }
+
+        /* Mobile responsive styles */
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+
+            .navbar {
+                padding: 0 10px;
+            }
+
+            .navbar-brand {
+                font-size: 1rem;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-menu {
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                background-color: #2c3e50;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+            }
+
+            .nav-menu.active {
+                max-height: 500px;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-menu a {
+                padding: 0 20px;
+                line-height: 50px;
+                border-bottom: 1px solid #3d5166;
+            }
+
+            .nav-menu a:hover,
+            .nav-menu a.active {
+                border-bottom: 1px solid #3d5166;
+                background-color: #3d5166;
+            }
+
+            .main-content {
+                padding: 20px;
+                margin-top: 10px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            /* Email display fix for mobile */
+            .email-container {
+                display: block;
+                margin-top: 5px;
+                word-break: break-word;
+                overflow-wrap: break-word;
+                font-size: 0.95rem;
+                line-height: 1.4;
+                padding: 8px;
+                background-color: #f0f7ff;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+
+            .email-container a {
+                word-break: break-word;
+            }
+
+            /* Adjust the overall layout of the list items on mobile */
+            #yapilacaklarvedestek li {
+                margin-bottom: 20px;
+                padding-left: 25px;
+            }
+        }
+
+        /* General style for email container (both mobile and desktop) */
+        .email-container {
+            display: inline-block;
+            word-break: keep-all;
+            margin-top: 3px;
+        }
+
+        /* Reading time style */
+        .reading-time-container {
+            margin-top: -20px;
+            margin-bottom: 20px;
+            text-align: right;
+        }
+
+        /* Reading time text */
+        .reading-time {
+            font-size: 0.9rem;
+            color: #777;
+            font-weight: 600;
+            display: inline-block;
+            padding: 3px 10px;
+            background-color: #f8f9fa;
+            border-radius: 15px;
         }
 
         .scroll-buttons {
@@ -279,7 +653,7 @@
 
         .subscription-message {
             font-size: 0.8rem;
-            height: 20px;
+            height: 0px;
             margin-top: 5px;
         }
 
@@ -303,12 +677,6 @@
 
             .subscribe-btn {
                 border-radius: 4px;
-            }
-
-            .nav-menu.active {
-                max-height: 500px;
-                /* Increased from 300px */
-                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
             }
         }
     </style>

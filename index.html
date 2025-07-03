@@ -412,41 +412,112 @@
         }
 
         /* Improved responsive navigation styles */
-        @media (max-width: 1024px) {
 
-            /* Earlier breakpoint to prevent text distortion */
-            .navbar-brand {
-                max-width: 60%;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
+
+        @media (max-width: 1480px) and (min-width: 1000px) {
+
+            body {
+                font-family: 'Open Sans', sans-serif;
+                line-height: 1.8;
+                font-size: 18px;
+                margin: 0;
+                padding: 0;
+                color: #1a202c;
+                background-color: #f8fafc;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                padding-top: 70px;
+                /* Space for fixed navbar */
+                overflow-x: hidden;
+                width: 100%;
+                box-sizing: border-box;
             }
 
-            .menu-toggle {
-                display: block !important;
+            /* New navbar styles */
+            .navbar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color: #2c3e50;
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 20px;
+                height: 60px;
+                z-index: 1000;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+            }
+
+            .navbar-hidden {
+                transform: translateY(-100%);
+            }
+
+            .navbar-brand {
+                font-family: 'Roboto Condensed', sans-serif;
+                font-weight: 700;
+                font-size: 1.2rem;
+                color: white;
+                text-decoration: none;
+                white-space: nowrap;
             }
 
             .nav-menu {
-                position: absolute;
-                top: 60px;
-                left: 0;
-                right: 0;
-                flex-direction: column;
-                background-color: #2c3e50;
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 0.3s ease;
-                display: none;
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
             }
 
-            .nav-menu.active {
-                max-height: 700px;
-                display: flex;
+            .nav-menu li {
+                margin: 0;
+                padding: 0;
+            }
+
+            .nav-menu a {
+                display: block;
+                color: #ecf0f1;
+                padding: 0 15px;
+                text-decoration: none;
+                transition: all 0.3s;
+                line-height: 60px;
+                font-weight: 600;
+                font-size: 0.9rem;
+                border-bottom: 3px solid transparent;
+            }
+
+            .nav-menu a:hover,
+            .nav-menu a.active {
+                color: #e74c3c;
+                border-bottom: 3px solid #e74c3c;
+            }
+
+            .nav-menu i {
+                margin-right: 8px;
+                width: 20px;
+                text-align: center;
+            }
+
+            /* Mobile menu button */
+            .menu-toggle {
+                display: none;
+                background: none;
+                border: none;
+                color: white;
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+
+            .nav-menu a {
+                line-height: 14px;
             }
         }
 
         /* Ensure navigation menu looks good even at tablet sizes */
-        @media (max-width: 900px) and (min-width: 769px) {
+        @media (max-width: 1140px) and (min-width: 1048px) {
             .nav-menu a {
                 padding: 0 10px;
                 font-size: 0.8rem;
@@ -458,7 +529,7 @@
         }
 
         /* Mobile responsive styles */
-        @media (max-width: 768px) {
+        @media (max-width: 1048px) {
             body {
                 font-size: 16px;
             }
@@ -539,6 +610,11 @@
             #yapilacaklarvedestek li {
                 margin-bottom: 20px;
                 padding-left: 25px;
+            }
+
+            #yapilacaklarvedestek a {
+                overflow-wrap: anywhere;
+                word-break: break-all;
             }
         }
 
@@ -1427,7 +1503,7 @@
                     <h2>İçeriği Paylaş</h2>
                     <div class="action-buttons">
                         <button class="btn" onclick="copyToClipboard('yapilacaklarvedestek')">
-                            <i class="fas fa-copy"></i> Panoya Kopyala                       
+                            <i class="fas fa-copy"></i> Panoya Kopyala
                         </button>
                     </div>
                     <div class="share-buttons">
