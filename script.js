@@ -13,22 +13,27 @@ document.addEventListener('DOMContentLoaded', function() {
     scrollToTopBtn = document.getElementById('scroll-to-top');
     scrollToBottomBtn = document.getElementById('scroll-to-bottom');
     
+    // Reset scroll position and navbar state
+    const navbar = document.querySelector('.navbar');
+    if (navbar) {
+        navbar.classList.remove('navbar-hidden');
+        lastScrollTop = 0;
+    }
+    
     // Set up event listeners
     setupNavbarToggle();
     setupMobileMenu();
     setupScrollButtons();
-    
-    // Check for hash in URL (for SPA-like navigation)
     checkUrlHash();
-    
-    // Setup forms if they exist
     setupEmailSubscription();
 });
 
-// Navbar hide/show on scroll
+// Update the navbar toggle function to be more consistent
 function setupNavbarToggle() {
     window.addEventListener('scroll', function () {
         const navbar = document.querySelector('.navbar');
+        if (!navbar) return;
+        
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
         // If scrolling down and past 100px from top, hide navbar
@@ -40,7 +45,7 @@ function setupNavbarToggle() {
             navbar.classList.remove('navbar-hidden');
         }
 
-        lastScrollTop = scrollTop;
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
     });
 }
 
