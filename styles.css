@@ -9,7 +9,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-top: 92px; /* space for taller navbar */
+    padding-top: 92px;
+    /* space for taller navbar */
     /* Space for fixed navbar */
     overflow-x: hidden;
     width: 100%;
@@ -41,7 +42,8 @@ body {
 .navbar-brand {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
-    font-size: 2.4rem; /* Base size */
+    font-size: 2.4rem;
+    /* Base size */
     color: white;
     text-decoration: none;
     white-space: nowrap;
@@ -50,7 +52,8 @@ body {
 /* Tablet responsive adjustments */
 @media (max-width: 1480px) and (min-width: 1000px) {
     .navbar-brand {
-        font-size: 2.4rem; /* Keep same size for tablet */
+        font-size: 2.4rem;
+        /* Keep same size for tablet */
     }
 }
 
@@ -103,7 +106,8 @@ body {
 .main-content {
     flex: 1;
     padding: 30px;
-    max-width: 1200px; /* was 800px */
+    max-width: 1200px;
+    /* was 800px */
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
@@ -172,9 +176,13 @@ ul ul li:before {
     color: #3498db;
 }
 
+/* Section divider */
 .divider {
-    border-top: 2px dashed #cbd5e0;
-    margin: 40px 0;
+    height: 2px;
+    max-width: 1100px;
+    margin: 40px auto;
+    background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
+    border-radius: 2px;
 }
 
 .highlight {
@@ -456,7 +464,8 @@ footer {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-        padding-top: 92px; /* space for taller navbar */
+        padding-top: 92px;
+        /* space for taller navbar */
         /* Space for fixed navbar */
         overflow-x: hidden;
         width: 100%;
@@ -488,7 +497,8 @@ footer {
     .navbar-brand {
         font-family: 'Roboto Condensed', sans-serif;
         font-weight: 700;
-        font-size: 2.4rem; /* Base size */
+        font-size: 2.4rem;
+        /* Base size */
         color: white;
         text-decoration: none;
         white-space: nowrap;
@@ -497,7 +507,8 @@ footer {
     /* Tablet responsive adjustments */
     @media (max-width: 1480px) and (min-width: 1000px) {
         .navbar-brand {
-            font-size: 2.4rem; /* Keep same size for tablet */
+            font-size: 2.4rem;
+            /* Keep same size for tablet */
         }
     }
 
@@ -568,7 +579,8 @@ footer {
 @media (max-width: 1048px) {
     body {
         font-size: 16px;
-        padding-top: 74px; /* space for shorter navbar */
+        padding-top: 74px;
+        /* space for shorter navbar */
     }
 
     .navbar {
@@ -822,20 +834,27 @@ footer {
 /* Articles grid styling */
 .articles-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Changed from 3 to 2 columns */
-    gap: 30px; /* Increased gap */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    /* Changed from 3 to 2 columns */
+    gap: 30px;
+    /* Increased gap */
     margin: 18px 0 34px;
 }
 
-@media (max-width: 900px) { /* Adjusted breakpoint */
-  .articles-grid { grid-template-columns: 1fr; }
+@media (max-width: 900px) {
+
+    /* Adjusted breakpoint */
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Base article card styling - more compact */
 .article-card {
     background: white;
     border-radius: 10px;
-    padding: 24px; /* Increased from 18px */
+    padding: 24px;
+    /* Increased from 18px */
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     border-left: 4px solid #e74c3c;
@@ -907,35 +926,36 @@ footer {
 /* Consistent h3 styling for all articles - smaller */
 .article-card h3 {
     margin: 0 0 12px 0;
-    font-size: 1.4rem; /* Increased from 1.2rem */
+    font-size: 1.4rem;
+    /* Increased from 1.2rem */
     color: #2c3e50;
     font-weight: 700;
 }
 
 .card h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: #1f2937;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  /* Remove any text-indent or padding-left that might be causing the issue */
-  text-indent: 0;
-  padding-left: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1f2937;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* Remove any text-indent or padding-left that might be causing the issue */
+    text-indent: 0;
+    padding-left: 0;
 }
 
 .card h3 i {
-  font-size: 1.2rem;
-  /* Ensure consistent spacing */
-  margin-right: 0;
+    font-size: 1.2rem;
+    /* Ensure consistent spacing */
+    margin-right: 0;
 }
 
 /* Make sure all card titles have consistent alignment */
 .card-grid .card h3 {
-  text-align: left;
-  padding-left: 0;
-  text-indent: 0;
+    text-align: left;
+    padding-left: 0;
+    text-indent: 0;
 }
 
 /* Consistent meta styling - smaller */
@@ -959,195 +979,273 @@ footer {
     line-height: 1.5;
     margin: 10px 0 0 0;
     font-size: 0.95rem;
-    flex-grow: 1; /* take remaining space */
+    flex-grow: 1;
+    /* take remaining space */
 }
 
 /* Pin actions to the bottom of cards */
 .card-actions {
-  margin-top: auto; /* push to bottom */
-  display: flex;
-  justify-content: flex-start;
+    margin-top: auto;
+    /* push to bottom */
+    display: flex;
+    justify-content: flex-start;
 }
 
 /* Fix button positioning and spacing in cards */
 .card .btn {
-  margin: 1.5rem auto 0 auto;
-  display: block;
-  width: fit-content;
+    margin: 1.5rem auto 0 auto;
+    display: block;
+    width: fit-content;
 }
 
 .arrow-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 12px;
-  border-radius: 8px;
-  background: #2c3e50;
-  color: #fff;
-  font-weight: 700;
-  text-decoration: none;
-  transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
-  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: #2c3e50;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
 }
 
-.arrow-btn i { font-size: 0.95rem; }
+.arrow-btn i {
+    font-size: 0.95rem;
+}
 
-.arrow-btn:hover { 
-  transform: translateY(-1px); 
-  filter: brightness(.97); 
-  box-shadow: 0 6px 14px rgba(0,0,0,.12); 
+.arrow-btn:hover {
+    transform: translateY(-1px);
+    filter: brightness(.97);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, .12);
 }
 
 /* Center-only navbar for New Design home */
 .navbar.navbar-centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .navbar.navbar-centered .navbar-brand {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 /* Hero intro */
 .hero {
-  text-align: center;
-  margin: 32px 0 10px;
+    text-align: center;
+    margin: 32px 0 10px;
 }
 
 .hero-title {
-  font-family: "Roboto Condensed", system-ui, -apple-system, Segoe UI, Roboto, Arial;
-  font-size: 2.4rem;
-  font-weight: 800;
-  color: #2c3e50;
-  margin: 0 0 10px;
+    font-family: "Roboto Condensed", system-ui, -apple-system, Segoe UI, Roboto, Arial;
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #2c3e50;
+    margin: 0 0 10px;
 }
 
 .hero-subtitle {
-  color: #64748b;
-  max-width: 820px;
-  margin: 0 auto 18px;
+    color: #64748b;
+    max-width: 820px;
+    margin: 0 auto 18px;
 }
 
 /* 3-up grid on desktop, responsive */
 .articles-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
-  margin: 18px 0 34px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin: 18px 0 34px;
 }
 
 @media (max-width: 1100px) {
-  .articles-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .articles-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 @media (max-width: 680px) {
-  .articles-grid { grid-template-columns: 1fr; }
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Third accent variant (violet) to pair with red & blue */
 .article-card.accent {
-  /* subtle violet gradient */
-  background: linear-gradient(135deg, #ffffff 0%, #f5f3ff 55%, #ede9fe 100%);
-  border-left: 4px solid #7c3aed;          /* was 5px */
-  position: relative;
+    /* subtle violet gradient */
+    background: linear-gradient(135deg, #ffffff 0%, #f5f3ff 55%, #ede9fe 100%);
+    border-left: 4px solid #7c3aed;
+    /* was 5px */
+    position: relative;
 }
 
 .article-card.accent::before {
-  content: '';
-  position: absolute; top: 0; right: 0;
-  border-left: 14px solid transparent;     /* was 15px */
-  border-top: 14px solid #7c3aed;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 14px solid transparent;
+    /* was 15px */
+    border-top: 14px solid #7c3aed;
 }
 
 /* Normalize card variants so sizes match exactly */
 .article-card,
 .article-card.featured,
 .article-card.recommended,
-.article-card.accent { box-sizing: border-box; }
+.article-card.accent {
+    box-sizing: border-box;
+}
 
 /* Same left accent width for all variants */
-.article-card.featured { border-left-width: 4px; }
-.article-card.recommended { border-left-width: 4px; }
+.article-card.featured {
+    border-left-width: 4px;
+}
+
+.article-card.recommended {
+    border-left-width: 4px;
+}
+
 .article-card.accent {
-  border-left: 4px solid #7c3aed;          /* was 5px */
-  background: linear-gradient(135deg, #ffffff 0%, #f5f3ff 55%, #ede9fe 100%);
-  position: relative;
+    border-left: 4px solid #7c3aed;
+    /* was 5px */
+    background: linear-gradient(135deg, #ffffff 0%, #f5f3ff 55%, #ede9fe 100%);
+    position: relative;
 }
 
 /* Corner tag size matches others */
 .article-card.accent::before {
-  content: '';
-  position: absolute; top: 0; right: 0;
-  border-left: 14px solid transparent;     /* was 15px */
-  border-top: 14px solid #7c3aed;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 14px solid transparent;
+    /* was 15px */
+    border-top: 14px solid #7c3aed;
 }
 
 /* Keep accent heading clean and consistent */
-.article-card h2 {                         /* unify h2 style across cards */
-  margin: 0 0 12px 0;
-  font-size: 0.95rem;
-  font-weight: 700;
+.article-card h2 {
+    /* unify h2 style across cards */
+    margin: 0 0 12px 0;
+    font-size: 0.95rem;
+    font-weight: 700;
 }
 
-.article-card.accent h2 { color: #7c3aed; border: none !important; }
-.article-card.accent h2 i { color: #7c3aed; }
+.article-card.accent h2 {
+    color: #7c3aed;
+    border: none !important;
+}
+
+.article-card.accent h2 i {
+    color: #7c3aed;
+}
+
 .article-card.accent h2::before,
-.article-card.accent h2::after { content: none !important; }
+.article-card.accent h2::after {
+    content: none !important;
+}
+
+/* Center a single-card grid */
+.extra-topics .articles-grid.single {
+    display: flex;
+    justify-content: center;
+    gap: var(--grid-gap, 20px);
+    max-width: 1100px;
+    margin: 0 auto 40px;
+}
+
+.extra-topics .articles-grid.single .article-card {
+    max-width: 360px;
+    width: 100%;
+}
+
+/* Sunset card: keep only the title icon amber */
+.article-card.sunset h2 i {
+    color: #f59e0b;
+}
+
+/* Sunset card: white arrow in the action button */
+.article-card.sunset .arrow-btn i {
+    color: #fff;
+}
+
+/* Sunset card: gray clock + text in reading-time */
+.article-card.sunset .article-meta .reading-time,
+.article-card.sunset .article-meta .reading-time i {
+    color: #6b7280;
+}
+
+/* Orange–yellow variant */
+.article-card.sunset {
+    border: 2px solid #f59e0b;
+    /* amber */
+    background: linear-gradient(135deg, #fff7ed 0%, #fff3c4 100%);
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.18);
+}
+
+.article-card.sunset h2 {
+    border-left: 4px solid #f59e0b;
+    /* replace/remove red accent */
+    color: #f59e0b;
+}
 
 /* Force center card buttons - place at end of CSS file */
 .article-card .arrow-btn {
-  margin: 2rem auto 0 auto !important;
-  display: block !important;
-  width: fit-content !important;
+    margin: 2rem auto 0 auto !important;
+    display: block !important;
+    width: fit-content !important;
 }
 
 /* If the buttons are wrapped in a container */
 .article-card .card-actions {
-  display: flex !important;
-  justify-content: center !important;
-  margin-top: auto !important;
-  padding-top: 2rem !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: auto !important;
+    padding-top: 2rem !important;
 }
 
 /* Alternative approach - target all buttons in cards */
 .article-card a[href],
 .article-card .btn {
-  margin: 2rem auto 0 auto !important;
-  display: block !important;
-  width: fit-content !important;
-  text-align: center !important;
+    margin: 2rem auto 0 auto !important;
+    display: block !important;
+    width: fit-content !important;
+    text-align: center !important;
 }
 
 /* Ensure card content structure */
 .article-card {
-  display: flex !important;
-  flex-direction: column !important;
+    display: flex !important;
+    flex-direction: column !important;
 }
 
 .article-card .article-excerpt {
-  flex-grow: 1 !important;
-  margin-bottom: 0 !important;
+    flex-grow: 1 !important;
+    margin-bottom: 0 !important;
 }
 
 /* Nuclear option - override everything */
 .main-content .articles-grid .article-card a {
-  margin: 2rem auto 0 auto !important;
-  display: block !important;
-  width: fit-content !important;
-  text-align: center !important;
+    margin: 2rem auto 0 auto !important;
+    display: block !important;
+    width: fit-content !important;
+    text-align: center !important;
 }
 
 .main-content .articles-grid .article-card {
-  text-align: center !important;
+    text-align: center !important;
 }
 
 .main-content .articles-grid .article-card h2,
 .main-content .articles-grid .article-card h3,
 .main-content .articles-grid .article-card p,
 .main-content .articles-grid .article-card .article-meta {
-  text-align: left !important;
+    text-align: left !important;
 }
 
 /* Featured start card styling */
@@ -1163,4 +1261,117 @@ footer {
 .featured-start-card .arrow-btn:hover {
     background-color: #219a52 !important;
     border-color: #219a52 !important;
+}
+
+/* Blockquote styling (unify across pages) */
+.main-content blockquote {
+    margin: 1.5rem 0;
+    padding: 1rem 1.25rem;
+    border-left: 4px solid #3498db;
+    background: #f0f7ff;
+    color: #0f2b46;
+    font-style: italic;
+    border-radius: 4px;
+}
+
+.main-content blockquote p {
+    margin: 0 0 0.6rem 0;
+}
+
+.main-content blockquote .source {
+    display: block;
+    margin-top: 0.5rem;
+    color: #6b7280;
+    /* muted */
+    font-style: normal;
+    text-align: right;
+    font-size: 0.95em;
+}
+
+/* Optional: generic highlight box to avoid inline styles */
+.highlight {
+    background-color: #f0f7ff;
+    border-left: 4px solid #3498db;
+    font-style: italic;
+    padding: 1rem 1.25rem;
+    border-radius: 4px;
+    color: #0f2b46;
+}
+
+/* Article meta/badges (byline) */
+.article-meta {
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+/* Center header meta (title already centered by default theme) */
+.main-content article header {
+    text-align: center;
+}
+
+.main-content article header .reading-time-container {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0 0.75rem;
+}
+
+.main-content article header .reading-time {
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+.main-content article header .article-meta {
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.main-content article header .article-meta em {
+    display: block;
+    /* put original title on its own line */
+    margin-top: 0.25rem;
+    font-style: italic;
+    color: #6b7280;
+}
+
+/* Ensure article image stays centered */
+.main-content .article-image {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Extra topics subtitle */
+.extra-topics .section-subtitle {
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.98rem;
+    max-width: 900px;
+    margin: 0 auto 22px;
+}
+
+/* Center figure content and captions (page‑local override) */
+.article-figure {
+    text-align: center;
+    margin: 1.25rem auto;
+}
+
+.article-figure img,
+.article-figure .article-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.article-figure figcaption,
+figure figcaption {
+    text-align: center;
+    margin-top: .5rem;
+    font-size: .95rem;
+    line-height: 1.35;
+    color: #6b7280;
+    /* muted caption color */
 }
