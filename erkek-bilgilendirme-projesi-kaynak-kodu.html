@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erkek Bilgilendirme Projesi - Kaynak Kodu | Erkek Bilgilendirme Projesi</title>
+    <meta name="description" content="Bu repo, erkekbilgilendirmeprojesi.org adresinde yayınlanan Erkek Bilgilendirme Projesi'nin kaynak kodlarını içerir." />
+    <link rel="canonical" href="https://erkekbilgilendirmeprojesi.org/erkek-bilgilendirme-projesi-kaynak-kodu.html" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        /* Center figure content and captions */
+        .article-figure {
+            text-align: center;
+            margin: 1.25rem auto;
+        }
+        .article-figure img,
+        .article-figure .article-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+        .article-figure figcaption,
+        figure figcaption {
+            text-align: center;
+            margin-top: .5rem;
+            font-size: .95rem;
+            line-height: 1.35;
+            color: #6b7280;
+        }
+        
+        /* Video container for responsive embedding */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            margin: 1.5rem auto;
+        }
+        
+        .video-container iframe,
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="scroll-buttons">
+        <button id="scroll-to-top" aria-label="Scroll to top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+        <button id="scroll-to-bottom" aria-label="Scroll to bottom">
+            <i class="fas fa-chevron-down"></i>
+        </button>
+    </div>
+
+    <nav class="navbar navbar-centered">
+        <a href="index.html" class="navbar-brand">Erkek Bilgilendirme Projesi</a>
+    </nav>
+
+    <main class="main-content">
+        <article id="erkek-bilgilendirme-projesi-kaynak-kodu">
+            <header>
+                <h1>Erkek Bilgilendirme Projesi - Kaynak Kodu</h1>
+                <div class="reading-time-container">
+                    <span class="reading-time"><i class="far fa-clock"></i> Tahmini okuma süresi: 1 dakika</span>
+                </div>
+            </header>
+
+            <h1 id="erkek-bilgilendirme-projesi-kaynak-kodu">Erkek Bilgilendirme Projesi - Kaynak Kodu</h1>
+<p>Bu repo, <a href="https://erkekbilgilendirmeprojesi.org" target="_blank" rel="noopener">erkekbilgilendirmeprojesi.org</a> adresinde yayınlanan <strong>Erkek Bilgilendirme Projesi</strong>'nin kaynak kodlarını içerir.</p>
+<h2 id="kullanm">Kullanım</h2>
+<p>Bu projenin kaynak kodları tamamen açıktır. Kodu dilediğiniz gibi kullanabilir, kopyalayabilir ve kendi projeleriniz için temel olarak alabilirsiniz.</p>
+<h3 id="api-anahtar-hakknda">API Anahtarı Hakkında</h3>
+<p>Kod içerisinde bulunan Firebase API anahtarı (bilgim dahilinde) herkese açıktır. Bu bir güvenlik açığı değildir. API anahtarı, yalnızca yetkilendirilmiş alan adlarından (domain) gelen isteklere izin verecek şekilde kısıtlanmıştır. Bu nedenle anahtarın başka sitelerde kullanılması mümkün değildir.</p>
+
+            <section class="share-section">
+                <h2>İçeriği Paylaş</h2>
+                <div class="action-buttons">
+                    <button class="btn" onclick="copyToClipboard('erkek-bilgilendirme-projesi-kaynak-kodu')">
+                        <i class="fas fa-copy"></i> Panoya Kopyala
+                    </button>
+                </div>
+                <div class="share-buttons">
+                    <button class="share-btn twitter" onclick="shareOnTwitter('erkek-bilgilendirme-projesi-kaynak-kodu')">
+                        <i class="fab fa-twitter"></i> Twitter'da Paylaş
+                    </button>
+                    <button class="share-btn whatsapp" onclick="shareOnWhatsApp('erkek-bilgilendirme-projesi-kaynak-kodu')">
+                        <i class="fab fa-whatsapp"></i> WhatsApp'ta Paylaş
+                    </button>
+                    <button class="share-btn telegram" onclick="shareOnTelegram('erkek-bilgilendirme-projesi-kaynak-kodu')">
+                        <i class="fab fa-telegram"></i> Telegram'da Paylaş
+                    </button>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-text">Erkek Bilgilendirme Projesi</div>
+        <div class="newsletter-signup">
+            <p>Site güncellemelerinden haberdar olmak için:</p>
+            <form id="email-form" class="email-form">
+                <input type="email" id="subscriber-email" placeholder="E-posta adresiniz" required />
+                <button type="submit" class="subscribe-btn"><i class="fas fa-paper-plane"></i> Abone Ol</button>
+            </form>
+            <div id="subscription-message" class="subscription-message"></div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/@erkekbilgilendirmesi" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/erkekbilgilendirmeprojesi/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@ErkekBilgilendirmeProjesi" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
