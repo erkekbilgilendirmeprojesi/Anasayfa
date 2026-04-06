@@ -1292,7 +1292,7 @@ footer {
 .highlight {
     background-color: #f0f7ff;
     border-left: 4px solid #3498db;
-    font-style: italic;
+    font-style: normal;
     padding: 1rem 1.25rem;
     border-radius: 4px;
     color: #0f2b46;
@@ -1350,6 +1350,14 @@ footer {
     font-size: 0.98rem;
     max-width: 900px;
     margin: 0 auto 22px;
+}
+
+/* Ensure final conclusion section never renders italic */
+#son-metin-kurulus-motivasyonu,
+#son-metin-kurulus-motivasyonu p,
+#son-metin-kurulus-motivasyonu strong,
+#son-metin-kurulus-motivasyonu h2 {
+    font-style: normal !important;
 }
 
 /* Center figure content and captions (page‑local override) */
