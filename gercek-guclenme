@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gerçek Kadın Güçlenmesi Erkekler İçin de İyidir — Ama Sahte Olanı Değil</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,400&family=Inter:wght@400;500&display=swap');
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #f9f8f6; color: #1a1a1a; font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.85; }
+  .blog { max-width: 720px; margin: 0 auto; padding: 4rem 2rem 5rem; }
+  .eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #888; margin-bottom: 0.9rem; }
+  h1 { font-family: 'Lora', serif; font-size: clamp(24px, 4.5vw, 38px); font-weight: 700; line-height: 1.2; margin-bottom: 1.1rem; color: #111; }
+  .intro { font-family: 'Lora', serif; font-style: italic; font-size: 17px; color: #555; line-height: 1.65; margin-bottom: 2rem; }
+  .series-note { font-size: 12px; color: #777; margin-bottom: 2rem; padding: 0.65rem 1rem; border-left: 2px solid #ddd; line-height: 1.6; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 2px 9px; border-radius: 20px; background: #f0ede8; border: 1px solid #ddd; color: #666; margin-right: 5px; margin-bottom: 1.5rem; }
+  .divider { width: 40px; height: 2px; background: #ccc; margin: 2rem 0; }
+  h2 { font-family: 'Lora', serif; font-size: 21px; font-weight: 600; margin: 2.5rem 0 0.85rem; color: #111; }
+  p { margin-bottom: 1.15rem; color: #222; }
+  .pull-quote { border-left: 2px solid #bbb; padding: 0.3rem 0 0.3rem 1.4rem; margin: 2rem 0; }
+  .pull-quote p { font-family: 'Lora', serif; font-style: italic; font-size: 18px; line-height: 1.5; margin: 0; color: #333; opacity: 0.88; }
+
+  .hive-wrapper { margin: 2rem 0; background: #f3f0eb; border: 1px solid #e0dbd3; border-radius: 12px; padding: 1.5rem; }
+  .hive-label { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; color: #888; margin-bottom: 1rem; }
+  .hive-rows { display: flex; flex-direction: column; gap: 10px; }
+  .hive-row { display: flex; align-items: center; gap: 12px; }
+  .hive-bar-wrap { flex: 1; background: #ddd; border-radius: 4px; height: 10px; overflow: hidden; }
+  .hive-bar { height: 100%; border-radius: 4px; }
+  .bar-queen { width: 1%; background: #D4960E; }
+  .bar-worker { width: 97%; background: #3a7dc9; }
+  .bar-drone { width: 3%; background: #999; }
+  .hive-name { width: 100px; font-size: 13px; font-weight: 500; color: #222; flex-shrink: 0; }
+  .hive-pct { width: 55px; font-size: 12px; color: #777; text-align: right; flex-shrink: 0; }
+  .hive-desc { font-size: 12px; color: #666; margin-top: 4px; line-height: 1.5; padding-left: 112px; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 1.75rem 0; }
+  @media(max-width:540px){ .two-col { grid-template-columns: 1fr; } }
+  .col-card { border: 1px solid #e0dbd3; border-radius: 12px; background: #f3f0eb; padding: 1.1rem; }
+  .col-head { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; color: #777; margin-bottom: 0.7rem; display: flex; align-items: center; gap: 8px; }
+  .dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+  .dot-green { background: #5a9e3a; }
+  .dot-red { background: #c84b4b; }
+  .col-card ul { list-style: none; }
+  .col-card ul li { font-size: 14px; color: #555; padding: 6px 0; border-bottom: 1px solid #e0dbd3; line-height: 1.55; }
+  .col-card ul li:last-child { border-bottom: none; }
+
+  .examples { margin: 1.5rem 0; display: flex; flex-direction: column; gap: 9px; }
+  .example-row { display: flex; gap: 12px; align-items: flex-start; font-size: 14px; color: #555; line-height: 1.6; padding: 0.75rem 1rem; background: #f3f0eb; border: 1px solid #e0dbd3; border-radius: 10px; }
+  .ex-mark { font-size: 14px; color: #c84b4b; flex-shrink: 0; font-weight: 700; margin-top: 1px; }
+
+  .principle-list { display: flex; flex-direction: column; gap: 10px; margin: 1.5rem 0; }
+  .principle { display: flex; gap: 14px; padding: 0.9rem 1rem; background: #f3f0eb; border: 1px solid #e0dbd3; border-radius: 10px; align-items: flex-start; }
+  .p-icon { font-family: 'Lora', serif; font-size: 22px; color: #aaa; line-height: 1.2; flex-shrink: 0; min-width: 26px; }
+  .p-text { font-size: 14px; color: #333; line-height: 1.65; }
+  .p-text strong { font-weight: 600; display: block; margin-bottom: 2px; font-size: 14px; color: #111; }
+
+  .conclusion { border: 1px solid #e0dbd3; border-radius: 12px; padding: 1.5rem 1.75rem; margin-top: 3rem; background: #f3f0eb; }
+  .conclusion .eyebrow { margin-bottom: 0.5rem; }
+  .conclusion p { font-size: 15px; color: #555; margin-bottom: 0; line-height: 1.75; }
+</style>
+</head>
+<body>
+<div class="blog">
+
+  <p class="eyebrow">Bölüm III / III — Erkekler, Kadınlar ve Devlet</p>
+  <h1>Gerçek Kadın Güçlenmesi Erkekler İçin de İyidir — Ama Sahte Olanı Değil</h1>
+  <p class="intro">Kadın güçlenmesinin bir versiyonu, erkekleri yüzyıllardır taşıdıkları haksız yükten kurtarır. Diğeri ise bu yükü ortadan kaldırmak yerine sadece yerini değiştirir. İkisi arasındaki farkı bilmek, konunun özüdür.</p>
+
+  <span class="badge">Toplumsal Cinsiyet</span>
+  <span class="badge">Toplum</span>
+  <span class="badge">Felsefe</span>
+
+  <p class="series-note">Bu yazı üç bölümlük bir serinin sonuncusudur. Birinci bölümde kadın ve erkeklerin fiziksel güçleri eşit olsaydı insanlığın nasıl şekilleneceği ele alındı. İkinci bölümde erkeklerin devlete otomatik bir fedakârlık borçları olmadığı savunuldu. Bu bölümde her iki argüman bir araya getiriliyor.</p>
+
+  <div class="divider"></div>
+
+  <p>Bu serinin ilk iki yazısını takip ettiyseniz, çelişkili görünen bir yerde bulmuş olabilirsiniz kendinizi. Birinci yazı, kadın güçlenmesinin — en derin biyolojik anlamıyla — erkekler için de kadınlar kadar iyi olacağını, her iki tarafı da kendi kafesinden kurtaracağını savundu. İkinci yazı ise devletin erkekleri sürekli sömürdüğünü, onların içgüdülerini aleyhlerine kullandığını ve karşılığında çok az şey verdiğini ortaya koydu.</p>
+
+  <p>Bu iki argümanı bir araya getirince, toplumsal cinsiyet tartışmalarının büyük çoğunluğunun hiç ulaşamadığı üçüncü bir konum ortaya çıkar — çünkü bu tartışmaların çoğu bir taraf için puan toplamakla meşguldür. Bu konum şudur: <em>gerçek</em> kadın güçlenmesi ile erkeğin kendi çıkarı birbirine karşı değildir; önemli ölçüde örtüşür. Ama bu cümlede "gerçek" kelimesi çok ağır bir yük taşıyor. Çünkü bugün "güçlenme" adı verilen şey çoğu zaman bambaşka bir şeydir — ve bu fark son derece önemlidir.</p>
+
+  <h2>Arı kovanı argümanı: dişiler daha fazla taşıyorsa erkekler daha az taşır</h2>
+
+  <p>Bal arısı kolonisini ele alalım — romantik bir metafor olarak değil, dişilerin güç elinde tuttuğunda iş yükünün nasıl dağıldığına dair işlevsel bir model olarak. Bir kovanda kraliçe ve işçi arılar — her ikisi de dişidir — koloniyi ayakta tutan neredeyse her şeyden sorumludur.</p>
+
+  <div class="hive-wrapper">
+    <p class="hive-label">Bal arısı kolonisi yapısı</p>
+    <div class="hive-rows">
+      <div>
+        <div class="hive-row">
+          <span class="hive-name">👑 Kraliçe</span>
+          <div class="hive-bar-wrap"><div class="hive-bar bar-queen"></div></div>
+          <span class="hive-pct">&lt;%0,001</span>
+        </div>
+        <p class="hive-desc">Üreme, sosyal uyum, koloninin uzun vadeli yönü</p>
+      </div>
+      <div>
+        <div class="hive-row">
+          <span class="hive-name">🐝 İşçiler</span>
+          <div class="hive-bar-wrap"><div class="hive-bar bar-worker"></div></div>
+          <span class="hive-pct">%95–99</span>
+        </div>
+        <p class="hive-desc">Tüm iş gücü: yiyecek toplama, savunma, inşa, bakım, bakıcılık</p>
+      </div>
+      <div>
+        <div class="hive-row">
+          <span class="hive-name">🛩 Drone'lar</span>
+          <div class="hive-bar-wrap"><div class="hive-bar bar-drone"></div></div>
+          <span class="hive-pct">%1–5</span>
+        </div>
+        <p class="hive-desc">Tek işlev: üreme. Sonbaharda kovandan atılırlar.</p>
+      </div>
+    </div>
+  </div>
+
+  <p>Drone'un hayatı yüzeysel olarak cazip görünür — tehlikeli iş yok, zorunlu fedakârlık yok, sadece var olmak. Ama daha yakından bakınca şunu görürsünüz: drone artık gerekli olmadığında kovandan atılır. Koloni içinde müzakere edilmiş bir konumu yoktur. Hayatta kalması, tek bir işlev için faydalı olmaya tamamen bağlıdır.</p>
+
+  <p>Şimdi işçi arıya bakın. Her şeyi o yapar — yiyecek toplamak, savunma, inşa, bakım. Yorucudur, evet. Ama aynı zamanda o, kolayca bir kenara atılamayacak kadar vazgeçilmezdir. Koloni içinde gerçek bir yapısal güç taşır — bunu talep ettiği için değil, kanıtlanmış ve zorunlu katkısıyla kazandığı için.</p>
+
+  <p>Bu anolojinin asıl mesajı şudur: <strong>dişilerin gerçek güç ve sorumluluk taşıdığı sistemlerde erkeğin yükü azalır.</strong> Kimse hayırseverlik yaptığı için değil; iş, yetenekli bireyler arasında daha dengeli dağıldığı için.</p>
+
+  <h2>Gerçek güçlenme erkekler için ne anlama gelir?</h2>
+
+  <p>Bu serinin ilk yazısına dönelim. Kadın ve erkekler fiziksel olarak eşit olsaydı, yalnızca erkeklere özgü fedakârlık mimarisinin — savaşların, tehlikeli işlerin, dayatılmış koruyuculuk rollerinin — meşrulaştırılmasının çok daha güç olacağını savunmuştuk. Fiziksel güç farkı, başlangıçtaki bahaneydi. O bahaneyi kaldırın, yük artık baştan erkeklere atanamaz.</p>
+
+  <p>Aynı mantık toplumsal düzlemde de geçerlidir. Kadınlar gerçek anlamda güçlendiğinde — eğitimli, ekonomik olarak bağımsız, hukuken eşit, kendini koruyabilir ve kolektif risklere ortak olabilir hale geldiğinde — "toplumun en ağır yüklerini erkekler taşımalıdır" argümanı kendi ağırlığıyla çökümeye başlar.</p>
+
+  <div class="two-col">
+    <div class="col-card">
+      <div class="col-head"><span class="dot dot-green"></span>Gerçek güçlenmenin erkeklere katkısı</div>
+      <ul>
+        <li>Tehlikeli kamusal rollerde paylaşılan sorumluluk — askerlik, acil durum hizmetleri, riskli işler</li>
+        <li>Ekonomik bağımsızlık kazanan kadın: tek geçim kaynağı olma baskısı azalır</li>
+        <li>Koruma yükü yeniden dağıtılır — sadece erkeğin varsayılan görevi olmaktan çıkar</li>
+        <li>Bağımlılığa ya da zorunluluğa değil, özgür iradeye dayalı ilişkiler</li>
+        <li>"Erkekler harcanabilir, kadınlar korunmalı" varsayımı politikadan silinir</li>
+        <li>Kimin ne taşıdığına dair daha dürüst bir toplumsal konuşma mümkün olur</li>
+      </ul>
+    </div>
+    <div class="col-card">
+      <div class="col-head"><span class="dot dot-red"></span>Sahte güçlenmenin ürettiği</div>
+      <ul>
+        <li>Sorumluluğa karşılık gelmeyen ayrıcalıklar — katkısız kazanımlar</li>
+        <li>Başka alanlarda eşitlik talep edilirken askerlik muafiyetleri korunur</li>
+        <li>Karşılıklı yükümlülük olmaksızın hukuki ve mali avantajlar</li>
+        <li>Erkekler iş yerinde ve savaşta ölmeye devam eder; kadınlar eski düzenin korumalarını sürdürür</li>
+        <li>Çifte standart: işe gelince eşitlik, bedele gelince koruma</li>
+        <li>Devlet erkekten kadına aktarım yapar ama erkeğin toplam yükünü azaltmaz</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Temel ayrım: sorumluluğu olan ve olmayan haklar</h2>
+
+  <p>Kadınların eşit haklara sahip olmasını savunmakta yanlış bir şey yoktur. Erkeklerin bunu stratejik ve samimi biçimde desteklemesinde de yanlış bir şey yoktur. Ama bu desteğin koşulsuz ya da eleştirisiz olmaması gerekir; çünkü bugün pek çok ülkede "güçlenme" adı verilen şey eşitlik değildir. Karşılıklı yükümlülük transferi olmaksızın gerçekleştirilen seçici bir avantajlar aktarımıdır.</p>
+
+  <div class="pull-quote">
+    <p>"Yönetim kurulunda eşit yer talep ederken cephe hattından muafiyet de talep edemezsiniz. Argümanınız eşitlikse. Cephe hattını tamamen kaldırmayı savunabilirsiniz — ama aynı anda o çizginin iki tarafında birden duramazsınız."</p>
+  </div>
+
+  <p>Aşağıdaki örnekler Türkiye'den alınmış olsa da ortaya koydukları örüntü evrenseldir:</p>
+
+  <div class="examples">
+    <div class="example-row">
+      <span class="ex-mark">✕</span>
+      <span>Zorunlu askerlik yalnızca erkeklere uygulanır — modern savaşın fiziksel güçten çok beceri gerektirdiği bir dönemde bile. Üstelik sözde vatanseverliğini sosyal medyada en yüksek sesle dile getiren gelenekçi kadınlar bile bu yükümlülükten muaf tutulur. Profil fotoğrafına Tomris Hatun koyan klavye milliyetçisi, askerliği tek bir gün bile yapmak zorunda değildir.</span>
+    </div>
+    <div class="example-row">
+      <span class="ex-mark">✕</span>
+      <span>Üniversitelerde 35 yaş üstü kadınlara özel kontenjan uygulanır. Normalde ilgili bölüme giremeyecek sıralamadaki bir kadın bu kontenjanla rahatça yerleşebilirken, aynı ailenin oğlu böyle bir imkâna sahip değildir — üstelik o oğul daha geç emekliliği, zorunlu askerliği ve daha riskli iş koşullarıyla da baş başa bırakılmaktadır.</span>
+    </div>
+    <div class="example-row">
+      <span class="ex-mark">✕</span>
+      <span>Nafaka ve miras düzenlemeleri yapısal olarak kadınları kayırır. Emekli bir ebeveyn vefat ettiğinde evli olmayan kız çocuğu emekli maaşının üçte ikisini almaya devam edebilirken, erkek kardeş aynı haktan yararlanamaz. Mantıksal bir gerekçesi bulunmayan bu uygulama, modern sosyal yardım kılığına büründürülmüş eski düzen korumacılığından başka bir şey değildir.</span>
+    </div>
+    <div class="example-row">
+      <span class="ex-mark">✕</span>
+      <span>Devlet bakanlıkları, bankacılık programları, tarımsal destekler ve sosyal destek altyapısı kadınları hedef kitle olarak konumlandırır. Oysa ortalama olarak daha erken ölen, daha çok intihar eden, daha çok evsiz kalan ve daha tehlikeli koşullarda çalışan erkekler için çoğu ülkede eşdeğer bir yapı bulunmamaktadır.</span>
+    </div>
+    <div class="example-row">
+      <span class="ex-mark">✕</span>
+      <span>Türkiye'deki erkekler kadınlardan ortalama 4-5 yıl daha kısa yaşamasına karşın daha geç emekliye ayrılmaktadır. Daha kısa yaşayan grup, daha uzun çalışmak zorundadır. Buna rağmen devlet bu tabloyu görmezden gelmektedir.</span>
+    </div>
+  </div>
+
+  <p>Bunların hiçbiri kadınlara karşı bir argüman değildir. Eşitlik dilini benimseyerek eski düzenin kadınlara sağladığı yapısal avantajları — hatta kimi zaman genişleterek — koruyan ve aynı zamanda eski düzenin erkeklere yüklediği dezavantajları yerinde tutan bir sisteme karşı argümanlardır.</p>
+
+  <h2>Erkekler neden gerçek güçlenmeyi istemeli — ve sahte olanı reddetmeli?</h2>
+
+  <p>Kendi konumunu anlayan erkek, kadınların haklara sahip olmasına körce karşı çıkan biri değildir. Bu hem irrasyonel hem de kendi aleyhine olurdu. Aslında yaşanan şu: devlet, erkekler açısından hiçbir şeyi değiştirmeden ilerici görünmenin yolunu bulmuştur. Kadınlara yeni haklar tanır — bu doğrudur. Eski erkek yükümlülüklerini kaldırmaz — işte sömürü budur. Sonuç olarak kadınlar statü kazanırken erkeğin yükü aynı kalır ya da ağırlaşır. Buna güçlenme denemez; aynı sömürücü yapının yeni bir versiyonudur.</p>
+
+  <p>Bunu berrak biçimde düşünen erkek farklı bir şey istemelidir: <em>gerçek</em> bir yeniden dağılım. Kadınlar için daha az değil — herkes için daha fazla hesap verebilirlik.</p>
+
+  <div class="principle-list">
+    <div class="principle">
+      <span class="p-icon">I</span>
+      <div class="p-text">
+        <strong>Haklar ve sorumluluklar birbirine bağlı olmalıdır.</strong>
+        Kadınlar hukuken eşitse — ki öyle olmalıdırlar — tam vatandaşlığın getirdiği yükümlülükler de eşit şekilde uygulanmalıdır. Zorunlu askerlik varsa herkese uygulanmalıdır. Ekonomik bağımsızlık isteğe bağlı bir ideal değil, varsayılan bir beklenti olmalıdır.
+      </div>
+    </div>
+    <div class="principle">
+      <span class="p-icon">II</span>
+      <div class="p-text">
+        <strong>Sosyal destek yapıları siyasi açıdan elverişli olanı değil, gerçekten kırılgan olanı korumalıdır.</strong>
+        Güvenlik ağları cinsiyetten bağımsız olarak ihtiyaç sahiplerine ulaşmalıdır. Evsiz bir erkeğin de desteğe ihtiyacı vardır. İntihar eden bir erkek de en az bir kadın kadar trajiktir.
+      </div>
+    </div>
+    <div class="principle">
+      <span class="p-icon">III</span>
+      <div class="p-text">
+        <strong>Koruma pazarlığı son bulmalıdır.</strong>
+        Kadınlar hem "beni koru, çünkü kadınım" diyerek eski düzenin korumasını hem de "bana eşit davran" diyerek yeni düzenin ayrıcalığını talep edemez. Seçim yapılmalıdır. Ve açıkça sorulduğunda çoğu düşünen kadın eşitliği seçer.
+      </div>
+    </div>
+    <div class="principle">
+      <span class="p-icon">IV</span>
+      <div class="p-text">
+        <strong>Erkekler sloganlara pezevenk gibi davranmayı bırakmalıdır.</strong>
+        Kadın haklarını desteklemek rasyoneldir. Herhangi bir politikayı, yalnızca erdem sergilemek ya da onay kazanmak için eleştirisiz desteklemek ise değildir. Neyin istendiğini ve size ne kadara patladığını incelemeden onay vermeyin.
+      </div>
+    </div>
+    <div class="principle">
+      <span class="p-icon">V</span>
+      <div class="p-text">
+        <strong>Hedef, gereksiz yere daha az insanın feda edildiği bir toplumdur.</strong>
+        Fedakârlık yükünün bir gruptan diğerine kaydırıldığı bir toplum değil. Kadınların güçlenmesi tehlikeli işi paylaşmak anlamına geliyorsa — iyidir. Kadınlar daha fazla koruma alırken erkekler tüm riski taşımaya devam ediyorsa — bu güçlenme değildir. Aynı eski sömürünün yeni bir etiketidir.
+      </div>
+    </div>
+  </div>
+
+  <h2>İşçi arı olmak, drone olmak değil</h2>
+
+  <p>Arı kovanına dönelim. İşçi arı dişidir, güçlüdür ve büyük bir sorumluluk taşır. Soğuktan ya da yırtıcılardan özel olarak korunmaz. Çalışır, savunur, inşa eder. Ve bu sayede kovan işler.</p>
+
+  <p>Erkek için bu analojideki soru "nasıl kraliçe olurum?" değildir. Soru şudur: "Nasıl drone olmaktan çıkarım?" — yani, mevsiminde ihtiyaç duyulan, tek bir içgüdüsel işlev için tutulan ve kış gelince kovandan atılan figür olmaktan.</p>
+
+  <p>Cevap, işçi arıların daha fazla yapmasına kızmak değildir. Cevap şudur: herkesin anlamlı biçimde katkıda bulunduğu bir kovan, içindeki her birey için daha istikrarlı, daha adil ve daha az zalim bir yerdir. İşçi arı, uzak isimsiz güçlerin yürüttüğü savaşlarda soyut bir vatanseverlik uğruna ölmez. Drone ölür — çünkü sisteme başka bir değeri yoktur ve sistem bunu çok iyi bilir.</p>
+
+  <div class="pull-quote">
+    <p>"Kadınların gerçek anlamda güçlendiği — yani yalnızca haklara değil, gerçek sorumluluklara da sahip olduğu — bir toplumda, hiç kimse yalnızca erkeklere bakıp 'bunu sadece siz taşımalısınız' diyemez."</p>
+  </div>
+
+  <h2>Bu tutum aslında nedir?</h2>
+
+  <p>Açık konuşmak gerekir: bu anti-feminist bir tutum değildir. İkiyüzlülük karşıtı bir tutumudur. Eşitliği yeterince ciddiye alarak onu tutarlı biçimde uygulamaya çalışan bir tutum — ki bu, bu tartışmanın her iki tarafındaki çoğu siyasi hareketin yapmaya yanaşmadığı bir şeydir.</p>
+
+  <p>Bu tutum şunu söyler: kadınlar özgür, bağımsız, eğitimli, hukuken korunan ve topluma tam katılımlı bireyler olmalıdır. Ve şunu da söyler: bu katılım yalnızca rahat olanları değil, zor olanları da kapsamalıdır. Eğer kapsıyorsa erkekler muazzam kazanır — çünkü zor olan paylaşılır. Eğer kapsamıyorsa "güçlenme" yalnızca zaten fazlasıyla sömürülen gruptan daha fazlasını çekmek için kullanılan bir kelimedir.</p>
+
+  <p>Güçlenmenin birinci versiyonunu destekleyen erkek pezevenk değildir. Kendi çıkarlarının ve kadınların gerçek çıkarlarının bu alanda örtüştüğünü doğru biçimde tespit etmiş rasyonel bir aktördür. İkinci versiyonu — eleştirisiz, içgüdüsel olarak, onay için — destekleyen erkek ise erkekleri hep fazla yüklü ve az değerli kılan örüntüyü sürdürüyordur: düşünmek yerine içgüdüyle hareket etmek, bir sistemi sorgulamak yerine ona hizmet etmek.</p>
+
+  <div class="conclusion">
+    <p class="eyebrow">Sentez</p>
+    <p>Birinci yazı neyin olabileceğiydi — fiziksel eşitliğin sosyal yapıyı başından itibaren yeniden şekillendirebileceği bir dünya. İkinci yazı neyin var olduğuydu — erkeklerden aldığından fazlasını vermeyen bir devlet. Bu üçüncü yazı ise neyin hâlâ mümkün olduğu üzerinedir. Gerçekten karşılıklı olan bir eşitlik versiyonu. Güçlenmenin daha fazla almak değil, daha fazla taşımak anlamına geldiği bir düzen. Erkekteki yükün azaldığı, ama bunun kadınlara özel muamele yapıldığı için değil, yetenekli insanların yetenekli işi paylaştığı için gerçekleştiği bir toplum. O dünya inşa etmeye değer. Ama onu, "eşitlik" kelimesinin her kullanılışında pratikte ne anlama geldiğini sorgulamadan alkış tutanlar değil — anlaşmanın her iki tarafını da ciddiye almaya hazır erkekler ve kadınlar inşa edecektir.</p>
+  </div>
+
+</div>
+</body>
+</html>
