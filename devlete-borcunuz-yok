@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erkekler Devlete Hiçbir Şey Borçlu Değil</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500&display=swap');
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #f9f8f6; color: #1a1a1a; font-family: 'DM Sans', sans-serif; font-size: 16px; line-height: 1.85; }
+  .blog { max-width: 720px; margin: 0 auto; padding: 4rem 2rem 5rem; }
+  .eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #888; margin-bottom: 0.9rem; }
+  h1 { font-family: 'DM Serif Display', serif; font-size: clamp(26px, 5vw, 42px); font-weight: 400; line-height: 1.2; margin-bottom: 1.1rem; color: #111; }
+  .intro { font-family: 'DM Serif Display', serif; font-style: italic; font-size: 18px; color: #555; line-height: 1.65; margin-bottom: 2rem; }
+  .series-note { font-size: 12px; color: #777; margin-bottom: 2rem; padding: 0.65rem 1rem; border-left: 2px solid #ddd; line-height: 1.6; }
+  .divider { width: 40px; height: 2px; background: #ccc; margin: 2rem 0; }
+  h2 { font-family: 'DM Serif Display', serif; font-size: 22px; font-weight: 400; margin: 2.5rem 0 0.9rem; color: #111; }
+  p { margin-bottom: 1.15rem; color: #222; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 2px 9px; border-radius: 20px; background: #f0ede8; border: 1px solid #ddd; color: #666; margin-right: 5px; margin-bottom: 1.5rem; }
+  .pull-quote { border-left: 2px solid #bbb; padding: 0.4rem 0 0.4rem 1.5rem; margin: 2rem 0; }
+  .pull-quote p { font-family: 'DM Serif Display', serif; font-style: italic; font-size: 19px; line-height: 1.5; margin: 0; color: #333; opacity: 0.9; }
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(155px, 1fr)); gap: 10px; margin: 1.75rem 0; }
+  .stat-card { background: #f3f0eb; border: 1px solid #e0dbd3; border-radius: 12px; padding: 1rem 1.1rem; }
+  .stat-num { font-family: 'DM Serif Display', serif; font-size: 28px; color: #111; line-height: 1; margin-bottom: 4px; }
+  .stat-label { font-size: 12px; color: #666; line-height: 1.4; }
+  .exchange-table { width: 100%; border-collapse: collapse; margin: 1.75rem 0; font-size: 14px; }
+  .exchange-table th { text-align: left; padding: 8px 12px; font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: #777; border-bottom: 1px solid #ddd; }
+  .exchange-table td { padding: 10px 12px; border-bottom: 1px solid #eee; color: #333; vertical-align: top; line-height: 1.5; }
+  .exchange-table tr:last-child td { border-bottom: none; }
+  .argument-list { list-style: none; margin: 1.5rem 0; display: flex; flex-direction: column; gap: 10px; }
+  .argument-list li { display: flex; gap: 12px; align-items: flex-start; background: #f3f0eb; border: 1px solid #e0dbd3; border-radius: 10px; padding: 0.85rem 1rem; font-size: 15px; color: #333; line-height: 1.6; }
+  .arg-num { font-family: 'DM Serif Display', serif; font-size: 20px; color: #999; flex-shrink: 0; min-width: 24px; line-height: 1.3; }
+  .warning-box { background: #f3f0eb; border-left: 2px solid #bbb; border-radius: 0 10px 10px 0; padding: 1rem 1.25rem; margin: 2rem 0; font-size: 15px; color: #555; line-height: 1.7; }
+  .warning-box strong { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500; margin-bottom: 6px; color: #888; }
+  .conclusion { border: 1px solid #e0dbd3; border-radius: 12px; padding: 1.5rem 1.75rem; margin-top: 3rem; background: #f3f0eb; }
+  .conclusion .eyebrow { margin-bottom: 0.5rem; }
+  .conclusion p { font-size: 15px; color: #555; margin-bottom: 0; line-height: 1.75; }
+</style>
+</head>
+<body>
+<div class="blog">
+
+  <p class="eyebrow">Bölüm II / III — Erkekler ve Devlet</p>
+  <h1>Erkekler Devlete Hiçbir Şey Borçlu Değil</h1>
+  <p class="intro">Devlet, en az şeyi verdiği gruptan en çok şeyi talep ediyor. Buna sosyal sözleşme demek mümkün değil — bu, üzerine bayrak örtülmüş bir sömürüdür.</p>
+
+  <span class="badge">Siyaset</span>
+  <span class="badge">Felsefe</span>
+  <span class="badge">Erkek Meselesi</span>
+
+  <p class="series-note">Bu yazı üç bölümlük bir serinin ikincisidir. Birinci bölümde, kadın ve erkeklerin fiziksel güçleri eşit olsaydı insanlığın nasıl şekilleneceği ele alındı. Üçüncü bölümde ise her iki argüman bir araya getirilecek.</p>
+
+  <div class="divider"></div>
+
+  <p>Neredeyse hiç yaşanmayan bir konuşma vardır — ne siyasette, ne medyada, ne de erkekler arasında pek nadiren. Bu konuşma, devletin erkeklerden gerçekte ne aldığı ile onlara gerçekte ne verdiği üzerinedir. Duygusallıktan, bayraklardan ve davullardan uzak, düz bir şekilde masaya yatırıldığında ortaya çıkan tablo son derece adaletsizdir.</p>
+
+  <p>Bu bir şikâyet değil, rasyonel bir argümandır. Şöyle özetlenebilir: Devlet için en çok fedakârlık yapan grup, aynı zamanda devletin en az koruduğu, en az yatırım yaptığı ve en az dinlediği gruptur. Bu cümle bir sosyal sözleşmeyi tanımlıyorsa, tarihin en kötü sözleşmesidir — ve en acı olanı, erkeklerin büyük çoğunluğunun bu sözleşmeyi okumadan imzalamış olmasıdır.</p>
+
+  <h2>Devlet erkeklerden ne alıyor?</h2>
+
+  <p>En uç örnekten başlayalım: savaş. Zorunlu askerliğin uygulandığı hemen her ülkede — tarihsel olarak ya da bugün — askere alınan bedenler erkeklere aittir. Erkekler gönüllü olduğu için değil; devlet, tek taraflı olarak erkek bedeninin ulusal çatışmanın uygun bedeli olduğuna hükmettiği için.</p>
+
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="stat-num">~%93</div>
+      <div class="stat-label">Modern çatışmalardaki cephe ölümlerinin büyük çoğunluğu erkektir</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">~%94</div>
+      <div class="stat-label">Dünya genelinde iş kazası ölümlerinin büyük bölümü erkektir</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">~%80</div>
+      <div class="stat-label">Batılı ülkelerdeki evsizlerin büyük çoğunluğu erkektir</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">~%75</div>
+      <div class="stat-label">Dünya genelinde intihar ölümlerinin büyük kısmı erkeklere aittir</div>
+    </div>
+  </div>
+
+  <p>Savaş en çarpıcı örnektir, ama tek örnek değildir. Erkekler iş yerinde çok daha yüksek oranlarda hayatını kaybediyor — çünkü toplumu ayakta tutan tehlikeli sektörlerde yoğunlaşıyorlar: madencilik, inşaat, balıkçılık, ormancılık, askerlik. Bunlar özgürce seçilmiş macera değil; ekonomik zorunluluğun en altında yer alan, erkeklerin sistematik biçimde yönlendirildiği işlerdir.</p>
+
+  <p>Bunlara ek olarak vergi katkısı, daha uzun çalışma saatleri, daha kısa ortalama ömür ve şiddet yoluyla ölme ihtimalinin daha yüksek olması da hesaba katılmalıdır. Kriz üstüne kriz — sel, yangın, deprem, savaş — her birinde erkekler tehlikenin ön saflarına yerleştirilir. Bu o kadar olağanlaşmıştır ki artık fark bile edilmiyor. "Önce kadınlar ve çocuklar" ifadesi nezaket olarak sunulur. Ama batan gemide geride bırakılan erkeğin durumu hiç sorgulanmaz.</p>
+
+  <h2>Devlet erkeklere karşılığında ne veriyor?</h2>
+
+  <p>Şimdi tablonun diğer tarafına bakalım. Devlet koruma, sosyal yardım ve destek mekanizmaları dağıtırken erkekler sürekli olarak listenin en altında yer alır — çoğu zaman tamamen yoktur.</p>
+
+  <table class="exchange-table">
+    <tr>
+      <th>Devletin sunduğu</th>
+      <th>Kime sunuluyor</th>
+      <th>Erkeklerin payı</th>
+    </tr>
+    <tr>
+      <td>Aile içi şiddet sığınakları ve özel hatlar</td>
+      <td>Ağırlıklı olarak kadınlara</td>
+      <td>Erkeklere yönelik altyapı neredeyse sıfır</td>
+    </tr>
+    <tr>
+      <td>Ruh sağlığı farkındalık kampanyaları</td>
+      <td>Genel kapsam, ancak intihar oranları daha yüksek olmasına rağmen erkeklere özel yaklaşım yok</td>
+      <td>Temsil yetersiz</td>
+    </tr>
+    <tr>
+      <td>Ebeveynlik hakları ve velayet çerçeveleri</td>
+      <td>Çoğu ülkede yapısal olarak anneleri kayırır</td>
+      <td>Başından itibaren dezavantajlı</td>
+    </tr>
+    <tr>
+      <td>Evsizlik hizmetleri</td>
+      <td>Herkese açık görünse de erkek ağırlıklı evsiz nüfus için tasarlanmamış</td>
+      <td>Yetersiz hizmet</td>
+    </tr>
+    <tr>
+      <td>Sağlık harcamaları ve araştırma fonları</td>
+      <td>Kadın sağlığı çok daha fazla hedefli devlet desteği alıyor</td>
+      <td>Oranın altında</td>
+    </tr>
+  </table>
+
+  <p>Mesele, diğer grupların daha az alması gerektiği değildir. Mesele şudur: Devlet yönlendirmeli risk ve iş yükünün en büyük bölümünü taşıyan grup, aynı zamanda devlet yönlendirmeli kaynaklardan en az korunan gruptur. Bu denge değil; gelenek kılığına büründürülmüş yapısal bir adaletsizliktir.</p>
+
+  <div class="pull-quote">
+    <p>"Devlete en az yük olan, ona en çok katkı sağlayan ve en kolay feda edilen erkek, aynı zamanda devletin korumak için en az harcama yaptığı kişidir."</p>
+  </div>
+
+  <h2>Erkek içgüdüsünün manipülasyonu</h2>
+
+  <p>Bu sistem nasıl ayakta kalıyor? Erkekler neden sadece reddedip gitmiyorlar? Cevap, kuvvetten çok daha sofistike bir şeyde yatıyor. Devletler ve onları destekleyen kültürler, evrimin erkeklere yerleştirdiği içgüdüleri silah olarak kullanmayı öğrendi: koruma dürtüsü, rekabet etme isteği ve fedakârlık yoluyla değer ispatlama ihtiyacı.</p>
+
+  <p>"Görev," "şeref," "vatan hizmeti" ve "fedakârlık" gibi sözcükler tarafsız tanımlamalar değildir. Bunlar, titizlikle sürdürülen kültürel araçlardır. Bir erkeği, değişimin adil olup olmadığını sorgulamadan siper hattına, yanan binaya ya da maden ocağına göndermenin yolu bunlardır. Sorgulayan "korkak" ilan edilir; itaat eden ise "kahraman." Her iki çerçeve de erkeğe değil, devlete hizmet eder.</p>
+
+  <ul class="argument-list">
+    <li><span class="arg-num">1</span>Koruma içgüdüsü gerçektir — ama bu içgüdü aile ve topluluk için evrimleşmiştir, asırlarca önce yabancılar tarafından çizilmiş sınırları olan devletler için değil.</li>
+    <li><span class="arg-num">2</span>Vatanseverlik meşru bir duygudur. Ama yurdu sevmek, karşılık vermeyen bürokratik bir kuruma kayıtsız şartsız hizmet anlamına gelmez.</li>
+    <li><span class="arg-num">3</span>Devlet için "fedakârlık yapan" erkeklerin büyük çoğunluğu bunu rasyonel bir değerlendirme sonucunda yapmaz. Bunu, bu düzeni analiz edecek yaşa gelmeden önce koşullandırıldıkları için yaparlar.</li>
+    <li><span class="arg-num">4</span>Erkek askerlik ve fedakârlık sistemlerini tasarlayanlar, çoğunlukla o sistemlere tabi olmamışlardır. Fedakârlık çağrısı en çok, bu çağrıdan güvenle muaf tutulanlardan gelir.</li>
+  </ul>
+
+  <h2>Ahlaki gerekçe</h2>
+
+  <p>Neredeyse her ahlak felsefesi çerçevesinde temel bir ilke vardır: yükümlülükler, elde edilen faydayla orantılıdır. İlişki karşılıklıysa her iki taraf için de yükümlülükler doğar. İlişki sömürücüyse, fedakârlığın ahlaki dayanağı çöker. Bir tarafın her şeyi verdiği, diğerinin hiçbir şey vermediği bir sözleşme değildir — iyi halkla ilişkilerle süslenmiş baskıdır.</p>
+
+  <p>Devlet, çoğu durumda erkeklerle yaptığı anlaşmanın gereklerini yerine getirmemiştir. Emeklerini, sağlıklarını, savaşlarda hayatlarını ve vergi gelirlerini almıştır — karşılığında ise aynı gelirle oluşturduğu destek sistemlerinden erkekleri büyük ölçüde dışlayan yapılar kurmuştur. Neredeyse her ahlaki standart açısından bu, erkekleri olağandışı fedakârlık yükümlülüğünden muaf kılar.</p>
+
+  <div class="warning-box">
+    <strong>Önemli bir ayrım</strong>
+    Bu, topluma, aileye ya da gerçek dayanışmaya karşı çıkmak değildir. Çocukların için, komşuların için, gerçek karşılıklılık ve sevgi içindeki ilişkilerin için fedakârlık yapmak — bunlar özgür iradeyle verilmiş kararlardır. Buradaki argüman özellikle şuna yöneliktir: Erkeklerin, salt erkek olarak doğmuş oldukları için devlete — bir kurum olarak — olağandışı fedakârlık borçlu olduğu varsayımına.</div>
+
+  <h2>Bu farkındalık pratikte nasıl görünür?</h2>
+
+  <p>Devlet sömürüsünü reddetmek, tüm toplumsal katılımı reddetmek anlamına gelmez. Çok daha özgül ve çok daha güçlü bir şey demektir: <em>bilinçli tercih</em>.</p>
+
+  <ul class="argument-list">
+    <li><span class="arg-num">→</span>Olağandışı bir fedakârlığa adım atmadan önce gerçekte ne aldığınızı sorun. Yurdu sevmek, herhangi bir hükümetin gündemini sevmekle aynı şey değildir.</li>
+    <li><span class="arg-num">→</span>"Görev" ve "şeref" gibi sözcüklerdeki duygusal manipülasyonu fark edin — reddetmek için değil, bu değerleri içgüdüyle değil özgürce seçebilmek için.</li>
+    <li><span class="arg-num">→</span>Sadakatinizi gerçekten karşılık bulan yerlere yatırın: gerçek topluluğunuza, ailenize, hakiki karşılıklı ilişkilerinize.</li>
+    <li><span class="arg-num">→</span>Fedakârlığınızı isteyen devletten, düştüğünüzde sizi tutacak yapıları da talep edin: ruh sağlığı hizmetleri, adil velayet hukuku, evsizlik desteği, eşit hukuki statü.</li>
+    <li><span class="arg-num">→</span>Erkek harcanabilirliğini bir iltifat olarak değerlendirmeyi bırakın. "Sen buna dayanacak kadar güçlüsün" saygı değildir. Bu, sizi kullanmak için bir gerekçedir.</li>
+  </ul>
+
+  <div class="pull-quote">
+    <p>"Düzeni inceleyip yine de hizmet etmeyi seçen erkek, özgür bir karar vermiştir. Hiçbir zaman sorgulamasına izin verilmediği için hizmet eden erkek ise sadece yönetilmiştir."</p>
+  </div>
+
+  <h2>Asıl mesele: öfke değil, farkındalık</h2>
+
+  <p>Bunların hiçbiri kadınlara, diğer gruplara ya da toplum fikrine karşı bir kırgınlık doğurmamalıdır. Bunlar yanlış hedefler ve yanlış duygulardır. Buradaki argüman yapısaldır; bir kuruma — devlete — ve erkeklerin bu kurumla ilişkileri hakkında eleştirel düşünmelerini engelleyen kültürel koşullanmaya yöneliktir.</p>
+
+  <p>Erkekler, çaresiz birer kurban değildir. Çoğunlukla, doğmadan önce tasarlanmış ve hiçbir zaman dürüstçe açıklanmamış bir düzeneğin habersiz katılımcılarıdır. Farkındalık zayıflık değildir. Yaşamı sisteme hizmet etmek yerine gerçekten seçerek yaşamanın başlangıcıdır.</p>
+
+  <p>Fedakârlıklarını hiç sorgulamayan erkek devlete yarar. Onları sorgulayan erkek kendine yarar. Ve kendi çıkarları hakkında berrak düşünen, gerçek karşılıklılık talep eden erkeklerle dolu bir toplum; sorgulanmayan erkek fedakârlığı üzerine kurulu bir toplumdan çok daha sağlıklıdır — çünkü ikincisi her zaman çöker ve herkesi birlikte götürür.</p>
+
+  <div class="conclusion">
+    <p class="eyebrow">Son Söz</p>
+    <p>Soru, topluma katkıda bulunup bulunmamak değildir. Elbette bulunmalısınız. Soru şudur: Erkek olarak doğduğunuz için devlet makinesinin sizi harcanabilir saydığı bir düzende, körce ve karşılıksız olarak bunu yapacak mısınız? Harcanabilir değilsiniz. Bir insansınız. Ve insanlar dürüst sözleşmeler hak eder — bayrak örtülmüş yükümlülükler değil.</p>
+  </div>
+
+</div>
+</body>
+</html>
